@@ -8,6 +8,7 @@
 import UIKit
 
 class quizResultsController: UIViewController {
+    var age = 35
     var possibleProductOutputs = [
         "foundation and serum": ["You’re a perfect fit for both our Double Wear Stay-in-Place Foundation and our Advanced Night Repair Serum. While the foundation will last in all types of weather on all types of skin tones and give you the smooth, unified complexion desired, the night repair serum will make your skin look and feel younger, less wrinkled, more radiant, and even toned. To buy these products or find out more, visit our website!", "11.jpg"],
         "foundation and moisturizer": ["You’re a perfect fit for both our Double Wear Stay-in-Place Foundation and our Revitalizing Supreme+ Moisturizer! While the foundation will last in all types of weather on all types of skin tones and give you the smooth, unified complexion desired, the moisturizer will supply a new-found layer of firmness, strenght, and radiance to your skin (not to mention a more lifted look). To buy these products or find out more, visit our website!", "8.jpg"],
@@ -30,6 +31,8 @@ class quizResultsController: UIViewController {
                 textBelowImage.text = possibleProductOutputs[winner]?[0]
                 resultsImage.image = UIImage(named:(possibleProductOutputs[winner]?[1])!)
             } else if possibleMatchOutputs.keys.contains(winner) {
+//                age = (UserDefaults.standard.object(forKey: "age") as? Int)!
+                
                 textBelowImage.text = possibleMatchOutputs[winner]?[0]
                 resultsImage.image = UIImage(named:possibleMatchOutputs[winner]![1])
             } else {

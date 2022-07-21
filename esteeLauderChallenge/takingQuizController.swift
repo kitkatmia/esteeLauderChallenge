@@ -58,10 +58,6 @@ class takingQuizController: UIViewController {
     }
     
     func findWinner() -> String {
-//        var amMatchPercentage = 0
-//        var foundationCount = 0
-//        var serumCount = 0
-//        var creamCount = 0
         if questionsArray == Array(findProduct.keys) {
             if foundationCount == serumCount {
                 return "foundation and serum"
