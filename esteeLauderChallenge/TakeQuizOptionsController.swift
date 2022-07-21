@@ -14,15 +14,15 @@ class TakeQuizOptionsController
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func amMatchClicked(_ sender: Any) {
-        let buttonClicked = "AmMatch"
-        UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
+@IBAction func amMatchClicked(_ sender: Any) {
+    let buttonClicked = "amMatch"
+    UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
     }
-    
-    @IBAction func whichProductClicked(_ sender: Any) {
-        let buttonClicked = "findProduct"
-        UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
+@IBAction func findProductClicked(_ sender: Any) {
+    let buttonClicked = "findProduct"
+    UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
     }
+
     /*
     // MARK: - Navigation
 

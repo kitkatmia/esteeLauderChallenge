@@ -11,7 +11,6 @@
         <!--Location Search Table-->
         <scene sceneID="wUC-Cy-E8f">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vxV-BF-Ud6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="LocationSearchTable" id="epz-WK-QQG" customClass="LocationSearchTable" customModule="esteeLauderChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="TrS-zK-AZg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -50,6 +49,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="5Zf-bo-1nD"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxV-BF-Ud6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4407" y="283"/>
         </scene>
@@ -254,7 +254,7 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="amMatchClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="llW-3g-dmj"/>
+                                    <action selector="amMatchClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="EaN-TC-c1p"/>
                                     <action selector="matchButton:" destination="HNS-DX-D5v" eventType="touchUpInside" id="mJT-30-aDf"/>
                                     <segue destination="onE-Ii-H3Y" kind="show" id="aOF-u0-Rm1"/>
                                 </connections>
@@ -269,8 +269,8 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="findProductClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="ElG-wY-mZY"/>
                                     <action selector="whichProductButton:" destination="HNS-DX-D5v" eventType="touchUpInside" id="ViF-Ra-LfO"/>
-                                    <action selector="whichProductClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="B2I-oL-3nd"/>
                                     <segue destination="onE-Ii-H3Y" kind="show" id="vpB-Df-CF9"/>
                                 </connections>
                             </button>
@@ -328,7 +328,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="answer1Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="4yy-3c-aBE"/>
-                                    <action selector="clickedAns1:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="ssh-Ad-TI5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXi-cp-LTT">
@@ -340,7 +339,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="answer2Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="uYs-V0-Wgk"/>
-                                    <action selector="clickedAns2:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="8Yf-Fo-c3E"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-8K-UNl">
@@ -355,6 +353,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="seeResultsClicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="mu6-u2-4NK"/>
                                     <segue destination="YnN-g8-owK" kind="show" id="jU0-mx-dCa"/>
                                 </connections>
                             </button>
@@ -362,13 +361,12 @@
                                 <rect key="frame" x="64" y="507" width="286" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2">
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 3">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="answer2Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="Xse-xv-Hhm"/>
                                     <action selector="answer3Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="FOL-Qv-aYI"/>
-                                    <action selector="clickedAns2:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="U2H-oS-Kap"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -384,10 +382,8 @@
                         <outlet property="answer2" destination="wXi-cp-LTT" id="gR7-eb-jOA"/>
                         <outlet property="answer3" destination="hpa-l7-CNe" id="5f7-Lc-5p9"/>
                         <outlet property="progressBar" destination="KEP-8K-UNl" id="wB6-xg-tXs"/>
-                        <outlet property="questionLabel" destination="YKy-bc-aR6" id="8Lu-KF-EjP"/>
-                        <outlet property="questionText" destination="YKy-bc-aR6" id="br7-S0-09J"/>
-                        <outlet property="resultsButton" destination="yPl-rU-bDZ" id="OIl-XD-yNS"/>
-                        <outlet property="seeResultsButton" destination="yPl-rU-bDZ" id="9Ng-9Z-0HU"/>
+                        <outlet property="questionsLabel" destination="YKy-bc-aR6" id="mV2-b8-edi"/>
+                        <outlet property="seeResults" destination="yPl-rU-bDZ" id="YuM-Z2-DgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEd-Hf-8LR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -402,14 +398,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATc-4M-hon">
-                                <rect key="frame" x="44" y="121" width="327" height="304"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There should be a bunch of text here describing your result. If there is not, the app is malfunctioning." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRh-Qc-M6s">
+                                <rect key="frame" x="44" y="421" width="327" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There should be a bunch of text here describing your result. If there is not, the app is malfunctioning." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRh-Qc-M6s">
-                                <rect key="frame" x="68" y="433" width="279" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" red="0.90196078430000004" green="0.81960784310000001" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -425,13 +417,16 @@
                                     <segue destination="jXe-dK-U2x" kind="show" id="TsJ-iN-ohv"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="ATc-4M-hon">
+                                <rect key="frame" x="44" y="97" width="327" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kME-k8-EVZ"/>
                         <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ap7-FI-XDl"/>
                     <connections>
-                        <outlet property="imageView" destination="ATc-4M-hon" id="jYY-DF-lG9"/>
                         <outlet property="resultsImage" destination="ATc-4M-hon" id="sKB-BR-LEe"/>
                         <outlet property="textBelowImage" destination="kRh-Qc-M6s" id="rHX-ft-T0e"/>
                     </connections>
@@ -541,7 +536,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jU0-mx-dCa"/>
         <segue reference="aOF-u0-Rm1"/>
         <segue reference="TsJ-iN-ohv"/>
     </inferredMetricsTieBreakers>
@@ -549,6 +543,7 @@
         <image name="0" width="3000" height="3000"/>
         <image name="1" width="4500" height="4500"/>
         <image name="4" width="4500" height="4500"/>
+        <image name="8" width="4500" height="4500"/>
         <image name="9" width="4500" height="4500"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
