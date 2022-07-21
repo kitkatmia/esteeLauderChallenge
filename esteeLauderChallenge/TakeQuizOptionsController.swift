@@ -7,18 +7,21 @@
 
 import UIKit
 
-class TakeQuizOptions: UIViewController {
-
+class TakeQuizOptionsController
+: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    @IBAction func matchButton(_ sender: Any) {
+    @IBAction func amMatchClicked(_ sender: Any) {
+        let buttonClicked = "AmMatch"
+        UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
     }
-    @IBAction func whichProductButton(_ sender: Any) {
+    
+    @IBAction func whichProductClicked(_ sender: Any) {
+        let buttonClicked = "findProduct"
+        UserDefaults.standard.set(buttonClicked, forKey: "buttonClicked")
     }
     /*
     // MARK: - Navigation

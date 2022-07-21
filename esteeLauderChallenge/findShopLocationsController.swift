@@ -135,26 +135,6 @@ extension findShopLocationsController : MKMapViewDelegate {
     }
 }
 
-//    func locationManager(_ manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-//        // func called when user responds to permission dialog
-//        if status == .authorizedWhenInUse { // happens when user says allow
-//            locationManager.requestLocation()
-//        }
-//    }
-    
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-////        if let location = locations.first {
-////            print("location:: \(location)")
-////        }
-//        if locations.first != nil {
-//            print("location:: (location)")
-//        }
-//    }
-
-//    func locationManager(manager: CLLocationManager, didFailWithError error: Error) {
-//        print("error:: \(error.localizedDescription)")
-//    }
-
     /*
     // MARK: - Navigation
 

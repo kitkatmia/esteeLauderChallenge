@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E4A0E77B2888CD6F00A62913 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */; };
+		E4A0E77D288905C700A62913 /* takingQuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0E77C288905C700A62913 /* takingQuizController.swift */; };
 		E4B8BB1D2887989E00CCA2FC /* homePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB1C2887989D00CCA2FC /* homePageController.swift */; };
 		E4B8BB1F288798FC00CCA2FC /* TakeQuizOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB1E288798FC00CCA2FC /* TakeQuizOptionsController.swift */; };
-		E4B8BB212887997200CCA2FC /* takingQuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB202887997200CCA2FC /* takingQuizController.swift */; };
 		E4B8BB2328879A8A00CCA2FC /* quizResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB2228879A8A00CCA2FC /* quizResultsController.swift */; };
 		E4B8BB2528879BB900CCA2FC /* findShopLocationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB2428879BB900CCA2FC /* findShopLocationsController.swift */; };
 		E4C1D89728836E7800F73690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1D89628836E7800F73690 /* AppDelegate.swift */; };
@@ -23,9 +23,9 @@
 
 /* Begin PBXFileReference section */
 		E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		E4A0E77C288905C700A62913 /* takingQuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takingQuizController.swift; sourceTree = "<group>"; };
 		E4B8BB1C2887989D00CCA2FC /* homePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageController.swift; sourceTree = "<group>"; };
 		E4B8BB1E288798FC00CCA2FC /* TakeQuizOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeQuizOptionsController.swift; sourceTree = "<group>"; };
-		E4B8BB202887997200CCA2FC /* takingQuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takingQuizController.swift; sourceTree = "<group>"; };
 		E4B8BB2228879A8A00CCA2FC /* quizResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizResultsController.swift; sourceTree = "<group>"; };
 		E4B8BB2428879BB900CCA2FC /* findShopLocationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findShopLocationsController.swift; sourceTree = "<group>"; };
 		E4C1D89328836E7800F73690 /* esteeLauderChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esteeLauderChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +73,8 @@
 				E4C1D89A28836E7800F73690 /* ViewController.swift */,
 				E4B8BB1C2887989D00CCA2FC /* homePageController.swift */,
 				E4B8BB1E288798FC00CCA2FC /* TakeQuizOptionsController.swift */,
-				E4B8BB202887997200CCA2FC /* takingQuizController.swift */,
 				E4B8BB2228879A8A00CCA2FC /* quizResultsController.swift */,
+				E4A0E77C288905C700A62913 /* takingQuizController.swift */,
 				E4B8BB2428879BB900CCA2FC /* findShopLocationsController.swift */,
 				E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */,
 				E4C1D89C28836E7800F73690 /* Main.storyboard */,
@@ -157,9 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B8BB2328879A8A00CCA2FC /* quizResultsController.swift in Sources */,
-				E4B8BB212887997200CCA2FC /* takingQuizController.swift in Sources */,
 				E4C1D89B28836E7800F73690 /* ViewController.swift in Sources */,
 				E4A0E77B2888CD6F00A62913 /* LocationSearchTable.swift in Sources */,
+				E4A0E77D288905C700A62913 /* takingQuizController.swift in Sources */,
 				E4C1D89728836E7800F73690 /* AppDelegate.swift in Sources */,
 				E4C1D89928836E7800F73690 /* SceneDelegate.swift in Sources */,
 				E4B8BB2528879BB900CCA2FC /* findShopLocationsController.swift in Sources */,

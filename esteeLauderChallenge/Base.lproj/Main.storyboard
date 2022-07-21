@@ -147,7 +147,7 @@
         <!--Estee Lauder-->
         <scene sceneID="qTW-at-khL">
             <objects>
-                <viewController id="nxN-U1-B7u" customClass="homePageController" sceneMemberID="viewController">
+                <viewController id="nxN-U1-B7u" customClass="homePage" customModule="esteeLauderChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RvT-ks-7V4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
         <!--Estee Lauder-->
         <scene sceneID="0GO-XV-plS">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="jXe-dK-U2x" customClass="TakeQuizOptionsController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="jXe-dK-U2x" customClass="TakeQuizOptionsController" customModule="esteeLauderChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4rs-uQ-dny">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,6 +254,7 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="amMatchClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="llW-3g-dmj"/>
                                     <action selector="matchButton:" destination="HNS-DX-D5v" eventType="touchUpInside" id="mJT-30-aDf"/>
                                     <segue destination="onE-Ii-H3Y" kind="show" id="aOF-u0-Rm1"/>
                                 </connections>
@@ -269,6 +270,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="whichProductButton:" destination="HNS-DX-D5v" eventType="touchUpInside" id="ViF-Ra-LfO"/>
+                                    <action selector="whichProductClicked:" destination="jXe-dK-U2x" eventType="touchUpInside" id="B2I-oL-3nd"/>
                                     <segue destination="onE-Ii-H3Y" kind="show" id="vpB-Df-CF9"/>
                                 </connections>
                             </button>
@@ -325,6 +327,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="answer1Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="4yy-3c-aBE"/>
                                     <action selector="clickedAns1:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="ssh-Ad-TI5"/>
                                 </connections>
                             </button>
@@ -336,18 +339,8 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="answer2Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="uYs-V0-Wgk"/>
                                     <action selector="clickedAns2:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="8Yf-Fo-c3E"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIi-pk-dXJ">
-                                <rect key="frame" x="64" y="523" width="286" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Asnwer 3">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="clickedAns3:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="DQ1-X9-K00"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-8K-UNl">
@@ -365,6 +358,19 @@
                                     <segue destination="YnN-g8-owK" kind="show" id="jU0-mx-dCa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-l7-CNe">
+                                <rect key="frame" x="64" y="507" width="286" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answer2Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="Xse-xv-Hhm"/>
+                                    <action selector="answer3Clicked:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="FOL-Qv-aYI"/>
+                                    <action selector="clickedAns2:" destination="onE-Ii-H3Y" eventType="touchUpInside" id="U2H-oS-Kap"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4oO-lo-2xH"/>
                         <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -374,9 +380,14 @@
                         <barButtonItem key="backBarButtonItem" title="Back to quiz questions" id="mHl-EP-ndf"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="progressBar" destination="KEP-8K-UNl" id="sAz-Hz-z1s"/>
+                        <outlet property="answer1" destination="X6k-Vd-Nnp" id="Ej1-it-wbf"/>
+                        <outlet property="answer2" destination="wXi-cp-LTT" id="gR7-eb-jOA"/>
+                        <outlet property="answer3" destination="hpa-l7-CNe" id="5f7-Lc-5p9"/>
+                        <outlet property="progressBar" destination="KEP-8K-UNl" id="wB6-xg-tXs"/>
+                        <outlet property="questionLabel" destination="YKy-bc-aR6" id="8Lu-KF-EjP"/>
                         <outlet property="questionText" destination="YKy-bc-aR6" id="br7-S0-09J"/>
                         <outlet property="resultsButton" destination="yPl-rU-bDZ" id="OIl-XD-yNS"/>
+                        <outlet property="seeResultsButton" destination="yPl-rU-bDZ" id="9Ng-9Z-0HU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEd-Hf-8LR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -530,6 +541,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jU0-mx-dCa"/>
         <segue reference="aOF-u0-Rm1"/>
         <segue reference="TsJ-iN-ohv"/>
     </inferredMetricsTieBreakers>
