@@ -8,6 +8,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Location Search Table-->
+        <scene sceneID="wUC-Cy-E8f">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxV-BF-Ud6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="epz-WK-QQG" customClass="LocationSearchTable" customModule="esteeLauderChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="TrS-zK-AZg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="qIV-O1-mfU" detailTextLabel="hSr-FM-hgM" style="IBUITableViewCellStyleSubtitle" id="hdz-OQ-vB5">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hdz-OQ-vB5" id="ouh-oX-nwG">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qIV-O1-mfU">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hSr-FM-hgM">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="epz-WK-QQG" id="cTd-Fg-5nv"/>
+                            <outlet property="delegate" destination="epz-WK-QQG" id="gKP-D8-OW0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5Zf-bo-1nD"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="4407" y="283"/>
+        </scene>
         <!--Estée Lauder-->
         <scene sceneID="ak8-Us-q7D">
             <objects>
@@ -24,7 +69,7 @@
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5cI-9w-5uC"/>
-                        <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hrE-tz-Jgs" firstAttribute="top" secondItem="5cI-9w-5uC" secondAttribute="top" id="D7q-ke-mdV"/>
                             <constraint firstItem="hrE-tz-Jgs" firstAttribute="leading" secondItem="5cI-9w-5uC" secondAttribute="leading" id="gaH-XM-a76"/>
@@ -39,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtX-RI-Yb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4382.608695652174" y="231.69642857142856"/>
+            <point key="canvasLocation" x="7142.0289855072469" y="282.58928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KxF-1l-GXg">
@@ -430,7 +475,7 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="p93-2x-CFf" kind="relationship" relationship="rootViewController" id="xIi-8b-Q77"/>
+                        <segue destination="Izl-2O-kE1" kind="relationship" relationship="rootViewController" id="SDd-Xz-KYT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30i-Ia-mYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -463,6 +508,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjB-r9-C0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2380" y="-1396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mCH-Wy-dij">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Izl-2O-kE1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="IO9-a0-sPe"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K5r-Us-cBf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p93-2x-CFf" kind="relationship" relationship="rootViewController" id="ooI-vg-I4p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hc-bu-1ie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6231.884057971015" y="282.58928571428572"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
