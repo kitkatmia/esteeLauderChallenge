@@ -8,11 +8,18 @@
 import UIKit
 
 class homePage: UIViewController {
-
+    @IBOutlet weak var buyNowButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func buyNowButton(_ sender: Any) {
+        if let url = URL (string: "https://www.esteelauder.com/") {
+            UIApplication.shared.open (url)
+        }
     }
     
 

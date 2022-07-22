@@ -87,7 +87,7 @@ class takingQuizController: UIViewController {
     
     func updateScreen(age: String) -> String {
         if questionIndex == (questionsArray.count-1) {
-            UserDefaults.standard.set(age, forKey: "age")
+            UserDefaults.standard.set(String(age), forKey: "age")
             seeResults.isHidden = false
             return "Finished!"
         }
