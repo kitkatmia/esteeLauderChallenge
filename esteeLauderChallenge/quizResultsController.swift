@@ -32,12 +32,15 @@ var possibleMatchOutputsUnder25 = [
         "amazing fit":["You’re the perfect fit for our products; we have exactly what you need! Take our “Which one should I get?” to further narrow down which product is best for you.", "4.jpg"]]
 
     @IBOutlet weak var resultsImage: UIImageView!
+    @IBOutlet weak var visitWebsiteButton: UIButton!
     @IBOutlet weak var textBelowImage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        visitWebsiteButton.isHidden = true
         if let winner = UserDefaults.standard.object(forKey: "winner") as? String {
             if possibleProductOutputs.keys.contains(winner) {
+                visitWebsiteButton.isHidden = false
                 textBelowImage.text = possibleProductOutputs[winner]?[0]
                 resultsImage.image = UIImage(named:(possibleProductOutputs[winner]?[1])!)
             } else if possibleMatchOutputsOver35.keys.contains(winner) {
@@ -62,6 +65,12 @@ var possibleMatchOutputsUnder25 = [
     
     @IBAction func backToStartButton(_ sender: Any) {
     }
+    @IBAction func visitWebsiteButton(_ sender: Any) {
+        if let url = URL (string: "https://www.esteelauder.com/") {
+            UIApplication.shared.open (url)
+        }
+    }
+
     
     /*
     // MARK: - Navigation

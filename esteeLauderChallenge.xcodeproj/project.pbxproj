@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4A0E77B2888CD6F00A62913 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */; };
 		E4A0E77D288905C700A62913 /* takingQuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0E77C288905C700A62913 /* takingQuizController.swift */; };
+		E4B11176288A24EE008846D4 /* OPTIMA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E4B11175288A24ED008846D4 /* OPTIMA.TTF */; };
 		E4B8BB1D2887989E00CCA2FC /* homePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB1C2887989D00CCA2FC /* homePageController.swift */; };
 		E4B8BB1F288798FC00CCA2FC /* TakeQuizOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB1E288798FC00CCA2FC /* TakeQuizOptionsController.swift */; };
 		E4B8BB2328879A8A00CCA2FC /* quizResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B8BB2228879A8A00CCA2FC /* quizResultsController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		E4A0E77C288905C700A62913 /* takingQuizController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takingQuizController.swift; sourceTree = "<group>"; };
+		E4B11175288A24ED008846D4 /* OPTIMA.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = OPTIMA.TTF; sourceTree = "<group>"; };
 		E4B8BB1C2887989D00CCA2FC /* homePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageController.swift; sourceTree = "<group>"; };
 		E4B8BB1E288798FC00CCA2FC /* TakeQuizOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeQuizOptionsController.swift; sourceTree = "<group>"; };
 		E4B8BB2228879A8A00CCA2FC /* quizResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizResultsController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				E4A0E77C288905C700A62913 /* takingQuizController.swift */,
 				E4B8BB2428879BB900CCA2FC /* findShopLocationsController.swift */,
 				E4A0E77A2888CD6F00A62913 /* LocationSearchTable.swift */,
+				E4B11175288A24ED008846D4 /* OPTIMA.TTF */,
 				E4C1D89C28836E7800F73690 /* Main.storyboard */,
 				E4C1D89F28836E7C00F73690 /* Assets.xcassets */,
 				E4C1D8A128836E7C00F73690 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B11176288A24EE008846D4 /* OPTIMA.TTF in Resources */,
 				E4C1D8A328836E7C00F73690 /* LaunchScreen.storyboard in Resources */,
 				E4C1D8A028836E7C00F73690 /* Assets.xcassets in Resources */,
 				E4C1D89E28836E7800F73690 /* Main.storyboard in Resources */,

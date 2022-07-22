@@ -39,7 +39,7 @@ class findShopLocationsController : UIViewController, CLLocationManagerDelegate 
 //        navigationItem.titleView = resultSearchController?.searchBar
         let searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
-        searchBar.placeholder = "test"
+        searchBar.placeholder = "Estee Lauder"
         navigationItem.titleView = resultSearchController?.searchBar
         
         resultSearchController?.hidesNavigationBarDuringPresentation = false // doesn't hide nav bar when results are shown
