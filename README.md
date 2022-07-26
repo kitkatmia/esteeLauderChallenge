@@ -19,4 +19,13 @@ Re-design and re-build their mobile app to promote new line of products
   * On click, user is redirected to apple maps and given directions to said location
 * 2 quizes with customized output ("Are you a match for this line of products?", "Which product is right for you?") 
 
+## Future Iterations
+* Fix constraints!
+ * Constraints were a major struggle for me (as reflected on the home page). Given more time, I would straighten everything out and generally make the design easy on the eyes on all devices
+* Better map integration
+ * Take user's exact location -- results should be as accurate as possible
+* Integrate Estee Lauder API (if there is one) into a new page
+ * So people can buy the products and find out more information about them directly from the app
+ * Improve efficency; no need to be redirected to the website, research for the product AND THEN buy it
+ 
 ## All built over the span of 5 days!
